@@ -9,7 +9,9 @@ p {
     text-align: center;
 }
 
-.established { fınt-style: italic;}
+h1, h2 {font-family: impact, serif;}
+
+.established { font-style: italic;}
 
 .menu {
     width: 80%;
