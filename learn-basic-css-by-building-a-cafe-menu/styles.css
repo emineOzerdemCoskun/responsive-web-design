@@ -9,6 +9,8 @@ p {
     text-align: center;
 }
 
+.established { fınt-style: italic;}
+
 .menu {
     width: 80%;
     background-color: burlywood;
