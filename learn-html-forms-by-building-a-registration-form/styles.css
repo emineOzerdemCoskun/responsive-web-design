@@ -9,7 +9,20 @@ body {
 }
 
 h1 {
-    margin: 1em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 2rem;
+    border: none;
 }
 
 label {
