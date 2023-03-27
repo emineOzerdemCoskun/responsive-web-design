@@ -1,3 +1,12 @@
 label {
     display: block;
 }
+
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+.inline {
+    width: unset;
+}
