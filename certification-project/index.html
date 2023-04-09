@@ -8,20 +8,21 @@
 </head>
 
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     <div class="container">
         <form id="survey-form">
             <fieldset>
-                <label for="name-label">Name<input id="name-label" type="text" class="input-control" placeholder="Enter your name"></label>
+                <label id="name-label">Name<input id="name" type="text" class="input-control"
+                        placeholder="Enter your name" required></label>
             </fieldset>
             <fieldset>
-                <label for="email-label">Email<input id="email-label" type="text" class="input-control"
-                        placeholder="Enter your email"></label>
+                <label id="email-label">Email<input id="email" type="email" class="input-control"
+                        placeholder="Enter your email" required></label>
             </fieldset>
             <fieldset>
-                <label for="number-label">Age(optional)<input id="number-label" type="number" class="input-control" min="10" max="99"
-                        placeholder="Age"></label>
+                <label id="number-label">Age(optional)<input id="number" type="number" class="input-control" min="10"
+                        max="99" placeholder="Age" required></label>
             </fieldset>
             <fieldset>
                 <label for="dropdown">Which option best describes your current role?
@@ -38,13 +39,14 @@
 
             <fieldset>Would you recommend freeCodeCamp to a friend?
                 <label for="definitely">
-                    <input type="radio" name="definitely" id="definitely" class="inline">Definitely</label>
+                    <input type="radio" name="recommend" id="definitely" class="inline"
+                        value="definitely">Definitely</label>
 
                 <label for="maybe">
-                    <input type="radio" name="maybe" id="maybe" class="inline">Maybe</label>
+                    <input type="radio" name="recommend" id="maybe" class="inline" value="maybe">Maybe</label>
 
                 <label for="not-sure">
-                    <input type="radio" name="not-sure" id="not-sure" class="inline">Not sure
+                    <input type="radio" name="recommend" id="not-sure" class="inline" value="not-sure">Not sure
                 </label>
             </fieldset>
             <fieldset>
@@ -62,21 +64,30 @@
                 <label for="preference"><input id="preference" type="checkbox" value="front-end"
                         name="preference">Front-end
                     Projects</label>
-                <label for="preference"><input id="preference" type="checkbox" value="back-end">Back-end
+                <label for="preference"><input id="preference" type="checkbox" value="back-end"
+                        name="preference">Back-end
                     Projects</label>
-                <label for="preference"><input id="preference" type="checkbox" value="data">Data
+                <label for="preference"><input id="preference" type="checkbox" value="data" name="preference">Data
                     visualization</label>
-                <label for="preference"><input id="preference" type="checkbox" value="challenges">Challenges</label>
-                <label for="preference"><input id="preference" type="checkbox" value="open-source">Open Source
+                <label for="preference"><input id="preference" type="checkbox" value="challenges"
+                        name="preference">Challenges</label>
+                <label for="preference"><input id="preference" type="checkbox" value="open-source"
+                        name="preference">Open Source
                     Community</label>
-                <label for="preference"><input id="preference" type="checkbox" value="gitter">Gitter help
+                <label for="preference"><input id="preference" type="checkbox" value="gitter" name="preference">Gitter
+                    help
                     rooms</label>
-                <label for="preference"><input id="preference" type="checkbox" value="videos">Videos</label>
-                <label for="preference"><input id="preference" type="checkbox" value="city-meetups">City
+                <label for="preference"><input id="preference" type="checkbox" value="videos"
+                        name="preference">Videos</label>
+                <label for="preference"><input id="preference" type="checkbox" value="city-meetups"
+                        name="preference">City
                     Meetups</label>
-                <label for="preference"><input id="preference" type="checkbox" value="wiki">Wiki</label>
-                <label for="preference"><input id="preference" type="checkbox" value="forum">Forum</label>
-                <label for="preference"><input id="preference" type="checkbox" value="additional-courses">Additional
+                <label for="preference"><input id="preference" type="checkbox" value="wiki"
+                        name="preference">Wiki</label>
+                <label for="preference"><input id="preference" type="checkbox" value="forum"
+                        name="preference">Forum</label>
+                <label for="preference"><input id="preference" type="checkbox" value="additional-courses"
+                        name="preference">Additional
                     Courses</label>
             </fieldset>
             <fieldset>
@@ -85,7 +96,7 @@
                         placeholder="Emter your comment here..."></textarea>
                 </label>
             </fieldset>
-            <input type="submit" value="Submit" class="input-control">
+            <input id="submit" type="submit" value="Submit" class="input-control">
         </form>
     </div>
 
